@@ -1,0 +1,81 @@
+body {
+  min-width: 100%;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container__box {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+.container__box--error-message {
+  font-size: 2.3rem;
+}
+.container__box--error-code {
+  font-size: 4rem;
+}
+.animated {
+  animation-duration: 2.3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(60deg) translateY(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+  }
+}
+.hinge {
+  margin: 20px;
+  animation-name: hinge;
+}

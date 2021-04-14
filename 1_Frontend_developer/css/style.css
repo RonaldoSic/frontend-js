@@ -1,0 +1,226 @@
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+::-webkit-scrollbar:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar:hover:active {
+  background: #999;
+}
+
+body {
+  background: linear-gradient(
+      90deg,
+      #1f005c,
+      #4c007e,
+      #8c00a0,
+      #c100a5,
+      #e30084,
+      #ff0653,
+      #ff2830,
+      #ff7349,
+      #ffb56b
+    )
+    no-repeat;
+  color: #fff;
+  min-height: 100vh;
+  /* height: 100vh; */
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+.header {
+  background: linear-gradient(
+      80deg,
+      #1f005c,
+      #4c007e,
+      #8c00a0,
+      #c100a5,
+      #e30084,
+      #ff0653,
+      #ff2830,
+      #ff7349,
+      #ffb56b
+    )
+    no-repeat;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__logo {
+  margin-left: 30px;
+}
+.header__logo i {
+  font-size: 2.4rem;
+  color: #deddee;
+}
+.header__menu {
+  margin-right: 50px;
+}
+.header__menu--profile i {
+  font-size: 2rem;
+  color: #deddee;
+}
+.header__menu .header__menu--profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu .header__menu--container {
+  display: none;
+  list-style: none;
+  margin-right: 60px;
+  margin: 0 0 0 -30px;
+  padding: 0;
+  position: absolute;
+  text-align: right;
+  width: 100px;
+}
+.header__menu:hover .header__menu--container,
+.header__menu--container:hover {
+  display: block;
+}
+.header__menu--container li {
+  margin: 10px 0;
+}
+.header__menu--container li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main {
+  /* height: 300px;         */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+}
+.main__title {
+  color: #e6e6e6;
+  font-size: 1.5rem;
+}
+.categories__title{
+  color: #06b8ff;
+  font-size: 1.2rem;
+  position: absolute;
+  padding-left: 30px;
+  width: 100%;
+  margin: 24px 0;
+}
+.input {
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  height: 30px;
+  outline: none;
+  padding: 0 15px;
+  width: 50%;
+}
+::placeholder {
+  color: #fff;
+}
+
+/* CAROUSEL */
+.carousel::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+}
+.carousel::-webkit-scrollbar-button {
+  width: 15px;
+  background-color: rgb(124, 124, 124);
+}
+/* .carousel::-webkit-scrollbar-track-piece{
+          width: 20px;
+          height: 20px;
+          background-color: #fff;
+        } */
+.carousel::-webkit-scrollbar-thumb {
+  background: #000000a1;
+  border-radius: 5px;
+}
+/* .carousel::-webkit-scrollbar-thumb:hover {
+          box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.767);
+        } */
+.carousel::-webkit-scrollbar-thumb:active {
+  background-color: #070707;
+}
+.carousel.carousel::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: #202020;
+}
+.carousel::-webkit-scrollbar-track:hover,
+.carousel::-webkit-scrollbar-track:active {
+  background-color: #222222;
+}
+.carousel {
+  overflow-x: scroll;
+  padding: 20px 60px;
+  position: relative;
+  /* margin: 0 40px; */
+  width: 100%;
+}
+.carousel__container {
+  margin: 110px 0;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+.carousel-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  height: 250px;
+  margin-right: 10px;
+  overflow: hidden;
+  transition: 0.3s all;
+  transform: center left;
+  position: relative;
+  width: 200px;
+}
+.carousel-item:hover ~ .carousel-item {
+  transform: translate3d(100px, 0, 0);
+}
+.carousel__container:hover .carousel-item {
+  opacity: 0.4;
+}
+.carousel__container:hover .carousel-item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.carousel-item__img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+.carousel-item__details {
+  background: linear-gradient(
+    to top,
+    rgba(116, 73, 73, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  font-size: 16px;
+  opacity: 0;
+  transition: all 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.carousel-item__details:hover {
+  opacity: 1;
+}

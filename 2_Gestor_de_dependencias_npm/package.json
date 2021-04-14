@@ -1,0 +1,16 @@
+{
+  "name": "nombres-randoms",
+  "version": "1.0.0",
+  "description": "Manejo de paquetes con NPM, creación de un paquete propio de npm para poder realizar algun funcionamiento",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Ronaldo Sic",
+  "license": "ISC",
+  "bin": {
+    "random-name": "./bin/globals.js"
+  },
+  "preferGlobal": true
+}

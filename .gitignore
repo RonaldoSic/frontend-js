@@ -1,0 +1,8 @@
+# Exclusion de archivos de la carpteta #1
+1_Frontend_developer/img/*
+1_Frontend_developer/docs/*
+
+# Exclusion de archivos de la carpteta #2
+2_Gestor_de_dependencias_npm/img/*jpeg
+
+# Exclusion de archivos de la carpteta #3 
