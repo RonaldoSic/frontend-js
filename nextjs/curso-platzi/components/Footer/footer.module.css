@@ -1,0 +1,23 @@
+.footer {
+  align-items: center;
+  box-shadow: -1px 0 4px rgba(47, 165, 47, 0.247);
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin-top: 8rem;
+  width: 100%;
+}
+.footer__social {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.link__social {
+  font-family: Ubuntu "Courier New", Courier, monospace;
+  text-decoration: none;
+  color: #045e0a;
+  color: #a6ac58;
+  font-size: 1rem;
+  font-weight: bold;
+}

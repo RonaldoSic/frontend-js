@@ -1,0 +1,119 @@
+.card__layout {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1rem 1.5rem;
+  gap: 1.5rem 0;
+}
+.card {
+  border-radius: 8px;
+  box-shadow: 0 1.5px 6px rgba(13, 141, 17, 0.172);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 1rem;
+  padding: 1rem 2.5rem;
+  animation: borderLinear 4s 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  cursor: pointer;
+}
+
+@keyframes borderLinear {
+  0% {
+    box-shadow: 0 1.5px 6px rgba(213, 92, 11, 0.288);
+  }
+  25% {
+    box-shadow: 0 1.5px 6px rgba(209, 180, 17, 0.288);
+  }
+  50% {
+    box-shadow: 0 1.5px 6px rgba(101, 216, 19, 0.288);
+  }
+  75% {
+    box-shadow: 0 1.5px 6px rgba(17, 218, 117, 0.288);
+  }
+  100% {
+    box-shadow: 0 1.5px 6px rgba(13, 138, 206, 0.288);
+  }
+  75% {
+    box-shadow: 0 1.5px 6px rgba(16, 28, 194, 0.288);
+  }
+  50% {
+    box-shadow: 0 1.5px 6px rgba(82, 19, 207, 0.288);
+  }
+  25% {
+    box-shadow: 0 1.5px 6px rgba(136, 18, 182, 0.288);
+  }
+  0% {
+    box-shadow: 0 1.5px 6px rgba(211, 20, 115, 0.288);
+  }
+}
+
+.card__cover {
+  width: 100%;
+  align-self: flex-start;
+}
+.card__img {
+  max-width: 100%;
+  height: auto;
+  /* border: 1px solid #aaa; */
+}
+.card__footer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.card__footer_title {
+  text-align: center;
+  color: #549122;
+  font-size: 1.6rem;
+}
+.card__footer_price {
+  text-align: right;
+  color: #737991;
+  font-size: 1.4rem;
+}
+.card__footer_price::before {
+  content: "$ ";
+  font-size: 1rem;
+  color: #297c38;
+}
+
+.card__footer_description {
+  font-size: 1.2rem;
+  color: #555555;
+}
+
+.card__footer_shape,
+.card__footer_taste {
+  font-size: 1rem;
+  color: #7095c5;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .card__layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 1.75rem;
+  }
+  .card {
+    flex-basis: 40%;
+    width: 100%;
+    margin: 0 0.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card__layout {
+    display: grid;
+    gap: 3rem 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 8rem;
+  }
+  .card {
+    width: 100%;
+  }
+}

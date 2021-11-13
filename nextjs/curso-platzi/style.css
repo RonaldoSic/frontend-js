@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+section {
+  min-height: 50vh;
+}
+
+nav menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav menu a i {
+  font-size: 1.85rem;
+  margin-right: 0.5rem;
+  color: #8ea71f;
+}
+
+footer ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li a i {
+  font-size: 1.5rem;
+  margin-right: 0.2rem;
+  color: #8ca336;
+}

@@ -1,3 +1,23 @@
+# Tabla de contenido
+
+- [Tabla de contenido](#tabla-de-contenido)
+- [1 Acerca de NPM, paquetes y módulos 1/15](#1-acerca-de-npm-paquetes-y-módulos-115)
+- [2 Instalación en Windows 2/15](#2-instalación-en-windows-215)
+- [3 Iniciar un proyecto 4/15](#3-iniciar-un-proyecto-415)
+  - [3.1 Para inicializar un proyecto con npm y node hay 3 fomras que se pueden utilizar](#31-para-inicializar-un-proyecto-con-npm-y-node-hay-3-fomras-que-se-pueden-utilizar)
+    - [3.1.1 npm init](#311-npm-init)
+    - [3.1.2 npm init -y ó npm init -y](#312-npm-init--y-ó-npm-init--y)
+    - [3.1.3 npm init -y con credenciales guardados previamente](#313-npm-init--y-con-credenciales-guardados-previamente)
+- [4 Instalación de dependencias 5/15](#4-instalación-de-dependencias-515)
+- [5 Instalación de dependencias con force 6/15](#5-instalación-de-dependencias-con-force-615)
+- [6 Actualizar y eliminar paquetes 7/15](#6-actualizar-y-eliminar-paquetes-715)
+- [7 Package lock y el uso los símbolos ^ y ~ 8/15](#7-package-lock-y-el-uso-los-símbolos--y--815)
+- [8 Ejecutar tareas 9/15](#8-ejecutar-tareas-915)
+- [9 Solución de problemas 10/15](#9-solución-de-problemas-1015)
+- [10 Seguridad 11/15](#10-seguridad-1115)
+- [11 Crear un paquete para NPM 12/15](#11-crear-un-paquete-para-npm-1215)
+- [12 Publicar un paquete en NPM 13/15](#12-publicar-un-paquete-en-npm-1315)
+
 # 1 Acerca de NPM, paquetes y módulos 1/15
 
 **¿Qué es NPM (node package manager)?**
@@ -262,26 +282,27 @@ Primero lo que se debe de hacer es probar el paquete de manera local, la manera 
 
 ```cmd
 # asegurarse que estamos en la carpeta donde esta ubicado el archivo que lo tenemos como modulo.
-> pwd 
+> pwd
 
 # Este es el comando que nos simula que el paquete es de origen desde los servidores de npm, con esto se ejecuta nuestro codigo que tengamos en el archivo js
 >sudo npm link
-#Con este comando nos instala el paquete a nuestra configuracion de nuestro equipo podemos verlo con 
+#Con este comando nos instala el paquete a nuestra configuracion de nuestro equipo podemos verlo con
 npm list -g
 # Para probarlo se llama con el nombre del paquete que le hemos puesto en este caso el nombre de mi proyecto es de gestion_de_paquetes_con_npm
 gestion_de_paquetes_con_npm
 ```
+
 Despues para poder agregar al usuario que se ha creado en npm la web, desde la consola debemos de escribir el siguiente comando.
 
 ```cmd
 npm adduser
-# que esto nos pedira el nombre de usuario, contraseña y correo electronico. 
+# que esto nos pedira el nombre de usuario, contraseña y correo electronico.
 # Despues ejecutamso el comando para que el paquete se publique en la web de npm
 npm publis
 ```
-Y nos queda algo como esto 
+
+Y nos queda algo como esto
 
 ![Despliegue](./img/desplegarnpm.png)
- 
 
 [React Summit Remote Edition - Conferencia By @midudev](https://www.youtube.com/watch?v=HbMDPjfitfw)

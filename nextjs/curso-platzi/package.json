@@ -1,0 +1,24 @@
+{
+  "name": "curso-platzi",
+  "version": "1.0.0",
+  "description": "El cursso de NextJS de Platzi ",
+  "main": "index.js",
+  "scripts": {
+    "dev:inspect": "npm --node-options=--inspect=0.0.0.0:9229 run dev",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "NextJs",
+    "ReactJS",
+    "FrontEnd"
+  ],
+  "author": "Ronaldo Sic",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
